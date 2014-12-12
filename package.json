@@ -1,7 +1,7 @@
 {
   "name": "grunt-better-options",
   "description": "Populates grunt.option with values parsed by minimist",
-  "version": "0.0.1-alpha1",
+  "version": "0.0.1-alpha2",
   "license": "MIT",
   "author": "Alex 'yumitsu' Zinchenko <team@cyclone.pw>",
   "main": "index.js",
