@@ -1,0 +1,15 @@
+{
+  "name": "grunt-better-options",
+  "description": "Populates grunt options with values parsed by minimist",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Alex 'yumitsu' Zinchenko <team@cyclone.pw>",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "minimist": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yumitsu/grunt-better-options.git"
+  }
+}
