@@ -18,7 +18,7 @@ var stubOpts = function() {
 
 var gruntOpts = function(obj) {
     var gruntArgs = require('grunt/lib/grunt/cli');
-    obj = obj || stubOpts();
+    obj = _.defaults((obj || stubOpts()), {'boolean': [], 'alias': {}, 'default': {}});
 
     _.each(gruntArgs.optlist, function(v, k) {
         if (_.isFunction(v.type) && _.isBoolean(v.type())) {
@@ -28,7 +28,7 @@ var gruntOpts = function(obj) {
             obj.alias[v.short] = k;
         }
         if (v.negate != void(0) && !!v.negate) {
-            obj.default[k] = false;
+            obj.default[k] = true;
         }
     });
 
@@ -47,6 +47,7 @@ module.exports = function(grunt, opts) {
     }
 
     var argv = minimist(process.argv.slice(2), opts);
+
     if (grunt && _.isFunction(grunt.option.init)) {
         grunt.option.init(_.omit(argv, '_'));
     }
