@@ -4,7 +4,7 @@ since it's broken as fuck
  */
 
 var minimist  = require('minimist');
-var _         = require('lodash');
+var _         = require('underscore');
 
 var stubOpts = function() {
     return {

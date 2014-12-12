@@ -4,6 +4,7 @@
   "version": "0.0.1-alpha1",
   "license": "MIT",
   "author": "Alex 'yumitsu' Zinchenko <team@cyclone.pw>",
+  "main": "index.js",
   "dependencies": {
     "underscore": "*",
     "minimist": "^1.1.0"
